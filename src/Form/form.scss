@@ -1,0 +1,18 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px;
+    input {
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+    }
+    button {
+        margin-top: 20px;
+        padding: 5px;
+        background-color: #fff;
+        outline: none;
+        cursor: pointer;
+    }
+}

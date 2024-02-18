@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './app.scss';
+import Form from "./Form/Form"
+import List from './List/List';
+import Tag from './Tag/Tag';
+import Filter from './Tag/Filter'
+import { Context } from "./Context";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Context>
+    <h1>Todo</h1>
+    <Form/>
+    <List/>
+    <Tag/>
+    <Filter/>
+    </Context>
+  )
 }
-
-export default App;

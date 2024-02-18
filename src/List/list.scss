@@ -1,0 +1,27 @@
+.list {
+    list-style-type: none;
+    padding: 5px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 500px;
+    gap: 15px;
+    .title_note {
+        font-size: 23px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            color: red;
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+    .tag_note {
+        font-size: 14px;
+        font-family: monospace;
+        border-bottom: 1px solid black;
+    }
+}

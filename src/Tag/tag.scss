@@ -1,0 +1,19 @@
+.filter_tags {
+    display: flex;
+    flex-direction: row;
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    p {
+        padding: 5px 15px;
+        background-color: rgb(105, 105, 105);
+        cursor: pointer;
+        color: #fff;
+
+        &:hover {
+            background-color: rgb(78, 78, 78);
+        }
+    }
+}

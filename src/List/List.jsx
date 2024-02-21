@@ -5,12 +5,11 @@ import { TodoContext } from '../Context';
 
 export default function List() {
 
-    const { todo } = useContext(TodoContext);
-
+    const { find } = useContext(TodoContext);
 
     return (
         <ul className="list">
-            {todo.map((elem, index) => <ListItem key={index} {...elem} />)}
+            {find.map((elem, index) => <ListItem key={index} {...elem} />)}
         </ul>
     )
 }

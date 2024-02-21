@@ -15,10 +15,13 @@ export default function List() {
     const uniqueTags = Array.from(new Set(allTags));
 
     return (
+        <>
         <div className='filter_tags'>
+            <TagItem tag="All"/>
             {uniqueTags.map((tag, index) => (
                 <TagItem key={index} tag={tag} />
             ))}
         </div>
+        </>
     );
 }

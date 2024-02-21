@@ -11,19 +11,27 @@ export function Context(props) {
     const handler_add = function (e) {
         let inputs = e.target.parentElement.childNodes;
         if (inputs[0].value !== '' && inputs[1].value !== '' && inputs[2].value !== '') {
-            setTodo([...todo, { title: inputs[0].value, description: inputs[1].value, tag: inputs[2].value, id: Date.now() }]);
+            setTodo([...find, { title: inputs[0].value, description: inputs[1].value, tag: inputs[2].value, id: Date.now() }]);
+            setFind(todo);
             inputs.forEach(elem => { elem.value = '' });
         }
+        console.log(todo)
+        console.log(find)
     }
 
     const handler_find = function (tag) {
-        const foundTasks = todo.filter(elem => elem.tag.includes(tag));
+        let foundTasks = null;
+        if(tag === 'All') {
+            foundTasks = todo.filter(elem => elem);
+        } else {
+            foundTasks = todo.filter(elem => elem.tag.includes(tag));
+        }
         setFind(foundTasks);
     }
 
     const handler_delete = (id) => {
         setTodo(todo.filter(elem => elem.id !== id));
-        setFind(find.filter(elem => elem.id !== id));
+        setFind(todo.filter(elem => elem.id !== id));
     }
 
     const handler_edit = function () {}

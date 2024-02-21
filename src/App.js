@@ -2,7 +2,7 @@ import './app.scss';
 import Form from "./Form/Form"
 import List from './List/List';
 import Tag from './Tag/Tag';
-import Filter from './Tag/Filter'
+// import Filter from './Tag/Filter'
 import { Context } from "./Context";
 
 export default function App() {
@@ -12,7 +12,7 @@ export default function App() {
     <Form/>
     <List/>
     <Tag/>
-    <Filter/>
+    {/* <Filter/> */}
     </Context>
   )
 }

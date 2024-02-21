@@ -9,8 +9,8 @@ export default function App() {
     <Context>
     <h1>Todo</h1>
     <Form/>
-    <List/>
     <Tag/>
+    <List/>
     </Context>
   )
 }

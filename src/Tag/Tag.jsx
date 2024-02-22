@@ -14,10 +14,16 @@ export default function List() {
 
     const uniqueTags = Array.from(new Set(allTags));
 
+    const show_all = function() {
+        if(uniqueTags.length > 0) {
+            return (<TagItem tag="All"/>)
+        }
+    }
+
     return (
         <>
         <div className='filter_tags'>
-            <TagItem tag="All"/>
+            {show_all()}
             {uniqueTags.map((tag, index) => (
                 <TagItem key={index} tag={tag} />
             ))}

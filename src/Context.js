@@ -12,7 +12,7 @@ export function Context(props) {
         let inputs = e.target.parentElement.childNodes;
         if (inputs[0].value !== '' && inputs[1].value !== '' && inputs[2].value !== '') {
             setTodo([...todo, { title: inputs[0].value, description: inputs[1].value, tag: inputs[2].value, id: Date.now() }]);
-            setFind([...todo, { title: inputs[0].value, description: inputs[1].value, tag: inputs[2].value, id: Date.now() }]);
+            setFind([...find, { title: inputs[0].value, description: inputs[1].value, tag: inputs[2].value, id: Date.now() }]);
             inputs.forEach(elem => { elem.value = '' });
         }
     }
@@ -29,7 +29,7 @@ export function Context(props) {
 
     const handler_delete = (id) => {
         setTodo(todo.filter(elem => elem.id !== id));
-        setFind(todo.filter(elem => elem.id !== id));
+        setFind(find.filter(elem => elem.id !== id));
     }
 
     const value = { todo, setTodo, handler_add, handler_find, find, handler_delete };

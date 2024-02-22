@@ -8,9 +8,9 @@ export default function Form() {
 
     return (
         <div className="form">
-            <input placeholder="title note" required></input>
-            <input placeholder="description note" required></input>
-            <input placeholder="tags note" required></input>
+            <input placeholder="title note"></input>
+            <input placeholder="description note"></input>
+            <input placeholder="tags note"></input>
             <button onClick={(e) => handler_add(e)}>Add</button>
         </div>
     )

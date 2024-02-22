@@ -17,14 +17,17 @@ export function Context(props) {
         }
     }
 
-    const handler_find = function (tag) {
-        let foundTasks = null;
+    const handler_find = function (tag, e) {
+        let foundTasks = [];
         if(tag === 'All') {
             foundTasks = todo.filter(elem => elem);
         } else {
             foundTasks = todo.filter(elem => elem.tag.includes(tag));
         }
         setFind(foundTasks);
+
+        e.target.parentElement.childNodes.forEach(elem => {elem.style.backgroundColor = null});
+        e.target.style.backgroundColor = 'black';
     }
 
     const handler_delete = (id) => {

@@ -5,6 +5,6 @@ export default function TagItem({ tag }) {
     const { handler_find } = useContext(TodoContext);
 
     return (
-        <p onClick={() => handler_find(tag)}>{tag}</p>
+        <p onClick={(e) => handler_find(tag, e)}>{tag}</p>
     );
 }

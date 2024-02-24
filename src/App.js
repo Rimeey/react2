@@ -1,7 +1,9 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.scss';
-import Form from "./Form/Form"
-import List from './List/List';
-import Tag from './Tag/Tag';
+import Form from './Components/Form/Form';
+import List from './Components/List/List';
+import Tag from './Components/Tag/Tag';
+import ModalWindow from './Components/ModalWindow/ModalWindow';
 import { Context } from "./Context";
 
 export default function App() {
@@ -10,6 +12,7 @@ export default function App() {
     <h1>Todo</h1>
     <Form/>
     <Tag/>
+    <ModalWindow/>
     <List/>
     </Context>
   )

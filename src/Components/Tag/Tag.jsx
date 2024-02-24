@@ -1,6 +1,6 @@
 import './tag.scss';
 import { useContext } from 'react';
-import { TodoContext } from '../Context';
+import { TodoContext } from '../../Context';
 import TagItem from './TagItem';
 
 export default function List() {

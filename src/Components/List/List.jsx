@@ -1,7 +1,7 @@
 import './list.scss';
 import ListItem from './ListItem';
 import { useContext } from 'react';
-import { TodoContext } from '../Context';
+import { TodoContext } from '../../Context';
 
 export default function List() {
 

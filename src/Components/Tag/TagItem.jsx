@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { TodoContext } from "../Context";
+import { TodoContext } from "../../Context";
 
 export default function TagItem({ tag }) {
     const { handler_find } = useContext(TodoContext);

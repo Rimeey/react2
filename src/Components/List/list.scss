@@ -24,7 +24,22 @@
 
     .delete {
         color: red;
+    }
+
+    .edit {
+        font-size: 14px;
+    }
+
+    .edit,
+    .delete {
         cursor: pointer;
         user-select: none;
+    }
+
+    .clicks {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: flex-end;
     }
 }
